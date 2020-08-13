@@ -1,0 +1,13 @@
+CREATE TABLE public.price
+(
+    serial_id numeric NOT NULL,
+    symbol character varying COLLATE pg_catalog."default" NOT NULL,
+    taim character varying COLLATE pg_catalog."default" NOT NULL,
+    opan numeric,
+    claus numeric,
+    high numeric,
+    low numeric,
+    volume numeric,
+    CONSTRAINT price_pkey PRIMARY KEY (symbol, taim)
+)
+
